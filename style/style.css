@@ -1,0 +1,156 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d1117; /* Fundo principal do GitHub */
+  color: #c9d1d9; /* Texto principal */
+  line-height: 1.6;
+}
+
+/* Contêiner principal */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #161b22; /* Fundo de caixas ou seções */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Estilo para o bloco de citação */
+blockquote {
+  margin: 20px 0;
+  padding: 15px 20px;
+  background-color: #161b22; 
+  border-left: 5px solid #435fff; /* Barra lateral */
+  color: #c9d1d9; /* Cor do texto */
+  font-style: italic;
+  border-radius: 5px;
+}
+
+blockquote strong {
+  color: #677dff; /* Destaque para o texto em negrito */
+  font-weight: bold;
+}
+
+/* Sidebar Foto e Bio */
+.sidebar {
+  flex: 1;
+  background-color: #161b22;
+  color: #c9d1d9;
+  padding: 20px;
+  text-align: center;
+  border-right: 1px solid #30363d; 
+}
+
+.sidebar .avatar {
+  width: 260px; 
+  height: 260px; 
+  border-radius: 50%; 
+  margin-bottom: 15px;
+  border: 2px solid #30363d; 
+  box-shadow: 2px 3px 2px #4979b1;
+  object-fit: cover; /* Garante que a imagem preencha o círculo sem deformar */
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sidebar .bio {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #8b949e; 
+}
+
+/* Seção principal */
+.main-content {
+  text-align: center;
+  flex: 2;
+  padding: 20px;
+}
+
+.main-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #c9d1d9;
+}
+
+.readme-content {
+  background: #0d1117;
+  padding: 15px;
+  border: 1px solid #30363d; 
+  border-radius: 5px;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.readme-content p {
+  margin-bottom: 10px;
+  color: #c9d1d9; 
+}
+
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Coloca todos os elementos um em baixo do outro */
+      margin: 10px;
+  }
+
+  .sidebar {
+      border-right: none; /* Remove a borda lateral */
+      border-bottom: 1px solid #30363d; /* Adiciona uma borda na parte inferior */
+  }
+
+  .main-content {
+      padding: 10px;
+  }
+
+  .avatar {
+      width: 150px; 
+      height: 150px;
+  }
+
+  h1 {
+      font-size: 20px; 
+  }
+
+  h2, h3, h4 {
+      font-size: 18px; 
+  }
+
+  .readme-content {
+      font-size: 14px; 
+  }
+}
+
+/* Estilo para telas pequenas */
+@media (max-width: 480px) {
+  .container {
+      margin: 5px;
+  }
+
+  .avatar {
+      width: 120px; 
+      height: 120px;
+  }
+
+  h1 {
+      font-size: 16px;
+  }
+
+  h2, h3, h4 {
+      font-size: 14px;
+  }
+
+  .readme-content {
+      font-size: 13px; /* Ajusta o texto */
+  }
+}
