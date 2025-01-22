@@ -16,4 +16,4 @@ Esta é uma landing page pessoal desenvolvida em HTML e CSS, projetada para apre
 + Avatar e Ícones: Inclui uma imagem de perfil e ícones interativos para contato.
 
 ## Demonstração
-Se preferir, você pode visualizar o projeto diretamente por este link: Minha Landing Page .
+Se preferir, você pode visualizar o projeto diretamente por este link: [Minha Landing Page](https://thomashenrique1.github.io/landingPage/) .
